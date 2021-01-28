@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
     "use strict";
+
     function teamo_google_maps() {
         if ($('.teamo-google-maps').length <= 0) {
             return;
@@ -143,6 +144,7 @@ jQuery(document).ready(function ($) {
     $(document).ready(function () {
         teamo_google_maps();
     });
+
     function teamo_init_menu_toggle() {
         var contain = '.teamo-nav-toggle';
         $(contain).each(function () {
@@ -194,6 +196,7 @@ jQuery(document).ready(function ($) {
         $(this).closest('.text-404').find('.search-form').toggleClass('open');
         return false;
     });
+
     // ----------teamo_custom_scrollbar-------------------
     function teamo_custom_scrollbar() {
         $('.teamo-mini-cart .minicart-items').mCustomScrollbar();
@@ -219,8 +222,7 @@ jQuery(document).ready(function ($) {
         var _winw = $(window).innerWidth();
         if (_winw < 992) {
             $('.sevice-item.style-1').removeClass('equal-container').find('.equal-element').removeAttr('style');
-        }
-        else {
+        } else {
             $('.sevice-item.style-1').addClass('equal-container');
         }
     }
@@ -323,6 +325,7 @@ jQuery(document).ready(function ($) {
     // -------chosen----------------------------------------------------
 
     $(".chosen-select").chosen({disable_search_threshold: 10});
+
     // ====================isotop========================
     function teamo_masonry() {
         var masonry = $('.masonry-grid').isotope({
@@ -428,7 +431,7 @@ jQuery(document).ready(function ($) {
             var tab_id = $(this).attr('href');
             var tab_animated = $(this).data('animate');
 
-            tab_animated = ( tab_animated == undefined || tab_animated == "" ) ? '' : tab_animated;
+            tab_animated = (tab_animated == undefined || tab_animated == "") ? '' : tab_animated;
             if (tab_animated == "") {
                 return false;
             }
@@ -437,7 +440,7 @@ jQuery(document).ready(function ($) {
 
                 var t = $(this);
                 var style = $(this).attr("style");
-                style = ( style == undefined ) ? '' : style;
+                style = (style == undefined) ? '' : style;
                 var delay = i * 400;
                 t.attr("style", style +
                     ";-webkit-animation-delay:" + delay + "ms;"
@@ -511,8 +514,7 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > 1000) {
             $('.backtotop').addClass('show');
-        }
-        else {
+        } else {
             $('.backtotop').removeClass('show');
         }
     });
@@ -555,13 +557,13 @@ jQuery(document).ready(function ($) {
         if (step === 'any' || step === '' || step === undefined || parseFloat(step) === 'NaN') step = 1;
         // Change the value
         if ($(this).is('.quantity-plus')) {
-            if (max && ( max == currentVal || currentVal > max )) {
+            if (max && (max == currentVal || currentVal > max)) {
                 $qty.val(max);
             } else {
                 $qty.val(currentVal + parseFloat(step));
             }
         } else {
-            if (min && ( min == currentVal || currentVal < min )) {
+            if (min && (min == currentVal || currentVal < min)) {
                 $qty.val(min);
             } else if (currentVal > 0) {
                 $qty.val(currentVal - parseFloat(step));
@@ -571,6 +573,7 @@ jQuery(document).ready(function ($) {
         $qty.trigger('change');
         e.preventDefault();
     });
+
 //------------------------EQUAL ELEM----------------------------
     function better_equal_elems() {
         setTimeout(function () {
@@ -601,8 +604,9 @@ jQuery(document).ready(function ($) {
     });
 // ------------------owl-thumbs-----------------------------------------------
     init_carousel();
+
     function init_carousel() {
-        //owl has thumbs 
+        //owl has thumbs
         $('.owl-carousel.has-thumbs').owlCarousel({
             loop: true,
             items: 1,
@@ -710,7 +714,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    // --------------------------------------------------------------------------            
+    // --------------------------------------------------------------------------
     function kt_get_scrollbar_width() {
         var $inner = jQuery('<div style="width: 100%; height:200px;">test</div>'),
             $outer = jQuery('<div style="width:200px;height:150px; position: absolute; top: 0; left: 0; visibility: hidden; overflow:hidden;"></div>').append($inner),
@@ -726,6 +730,7 @@ jQuery(document).ready(function ($) {
 
     // -----------------------------mega-menu------------------
     kt_resizeMegamenu();
+
     function kt_resizeMegamenu() {
         var window_size = parseFloat(jQuery('body').innerWidth());
         window_size += kt_get_scrollbar_width();
@@ -754,7 +759,7 @@ jQuery(document).ready(function ($) {
                             }
                             if (overflow_right && !overflow_left) {
                                 var left = (item_left - container_left);
-                                left = left - ( container_width - sub_menu_width );
+                                left = left - (container_width - sub_menu_width);
                                 $(element).children('.mega-menu').css({'left': -left + 'px'});
                             }
                         })
@@ -810,4 +815,4 @@ jQuery(document).ready(function ($) {
     teamo_countdown();
     teamo_init_menu_toggle();
     teamo_custom_scrollbar_header_nav();
-}); 
+});

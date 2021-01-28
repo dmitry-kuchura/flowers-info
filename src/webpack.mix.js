@@ -47,6 +47,6 @@ mix.styles([
     'resources/js/fancybox/source/jquery.fancybox.css',
     'resources/css/jquery.scrollbar.min.css',
     'resources/css/mobile-menu.css',
-    'resources/css/flaticon/flaticon.css',
+    'resources/css/flaticon.css',
     'resources/css/style.css',
 ], 'public/css/all.css');

@@ -38,21 +38,21 @@
                     <div class="teamo-language teamo-dropdown">
                         <a href="#" class="active language-toggle" data-teamo="teamo-dropdown">
                             <span>
-                                English (USD)
+                                Українська (Укр)
                             </span>
                         </a>
                         <ul class="teamo-submenu">
                             <li class="switcher-option">
                                 <a href="#">
                                     <span>
-                                        French (EUR)
+                                        Русский (Рус)
                                     </span>
                                 </a>
                             </li>
                             <li class="switcher-option">
                                 <a href="#">
                                     <span>
-                                        Japanese (JPY)
+                                        English (Eng)
                                     </span>
                                 </a>
                             </li>
@@ -76,17 +76,6 @@
                     <div class="block-search-block">
                         <form class="form-search form-search-width-category">
                             <div class="form-content">
-                                <div class="category">
-                                    <select title="cate" data-placeholder="All Categories" class="chosen-select"
-                                            tabindex="1">
-                                        <option value="United States">Accessories</option>
-                                        <option value="United Kingdom">Cacti</option>
-                                        <option value="Afghanistan">Succulents</option>
-                                        <option value="Aland Islands">Sofas</option>
-                                        <option value="Albania">New Arrivals</option>
-                                        <option value="Algeria">Storage</option>
-                                    </select>
-                                </div>
                                 <div class="inner">
                                     <input type="text" class="input" name="s" value="" placeholder="Search here">
                                 </div>
@@ -433,60 +422,6 @@
     </div>
 </div>
 @yield('content')
-<div class="instagram-wrapp">
-    <div>
-        <h3 class="custommenu-title-blog">
-            <i class="flaticon-instagram" aria-hidden="true"></i>
-            Instagram Feed
-        </h3>
-        <div class="teamo-instagram">
-            <div class="instagram owl-slick equal-container"
-                 data-slick='{"autoplay":false, "autoplaySpeed":1000, "arrows":false, "dots":false, "infinite":true, "speed":800, "rows":1}'
-                 data-responsive='[{"breakpoint":"2000","settings":{"slidesToShow":5}},{"breakpoint":"1200","settings":{"slidesToShow":4}},{"breakpoint":"992","settings":{"slidesToShow":3}},{"breakpoint":"768","settings":{"slidesToShow":2}},{"breakpoint":"481","settings":{"slidesToShow":2}}]'>
-                <div class="item-instagram">
-                    <a href="#">
-                        <img src="/images/item-instagram-1.jpg" alt="img">
-                    </a>
-                    <span class="text">
-                        <i class="icon flaticon-instagram" aria-hidden="true"></i>
-			        </span>
-                </div>
-                <div class="item-instagram">
-                    <a href="#">
-                        <img src="/images/item-instagram-2.jpg" alt="img">
-                    </a>
-                    <span class="text">
-                        <i class="icon flaticon-instagram" aria-hidden="true"></i>
-			        </span>
-                </div>
-                <div class="item-instagram">
-                    <a href="#">
-                        <img src="/images/item-instagram-3.jpg" alt="img">
-                    </a>
-                    <span class="text">
-                        <i class="icon flaticon-instagram" aria-hidden="true"></i>
-			        </span>
-                </div>
-                <div class="item-instagram">
-                    <a href="#">
-                        <img src="/images/item-instagram-4.jpg" alt="img">
-                    </a>
-                    <span class="text">
-                        <i class="icon flaticon-instagram" aria-hidden="true"></i>
-			        </span>
-                </div>
-                <div class="item-instagram">
-                    <a href="#">
-                        <img src="/images/item-instagram-5.jpg" alt="img">
-                    </a>
-                    <span class="text">
-                        <i class="icon flaticon-instagram" aria-hidden="true"></i>
-			        </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @widget('footer')
 </body>
 </html>
